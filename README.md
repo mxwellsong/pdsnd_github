@@ -5,7 +5,7 @@ Created on Dec 11th, 2018
 Python Bikeshare Project
 
 ### Description
-Describe what your project is about and what it does
+This project takes in user input to determine how to filter bikeshare data from 3 different cities.
 
 ### Files used
 Include the files used
