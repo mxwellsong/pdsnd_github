@@ -38,20 +38,20 @@ def create_csv(city):
 
     # create month column
     months = []
-    for i in df['New Start Time']:
-        months.append(i.month)
+    for new_time in df['New Start Time']:
+        months.append(new_time.month)
     df['Month'] = months
 
     # create day of week column
     days = []
-    for i in df['New Start Time']:
-        days.append(i.dayofweek)
+    for new_time in df['New Start Time']:
+        days.append(new_time.dayofweek)
     df['Day'] = days
 
     # create hour column
     hours = []
-    for i in df['New Start Time']:
-        hours.append(i.hour)
+    for new_time in df['New Start Time']:
+        hours.append(new_time.hour)
     df['Hour'] = hours
 
     # create trip column
