@@ -8,8 +8,8 @@ Python Bikeshare Project
 This project takes in user input to determine how to filter bikeshare data from 3 different cities.
 
 ### Files used
-Include the files used
+The input files include the three csvs for each city (Washington, Chicago, and New York) as well as the run.py and script files
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+There is credit due towards StackExchange as well as to peers who helped with logistical code issues
 
