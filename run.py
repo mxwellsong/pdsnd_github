@@ -13,14 +13,14 @@ print('Hello! Let\'s explore some US bikeshare data!')
 # get user input for CITY (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 choose_city = str(input("Would you like to see data for Chicago, New York, or Washington?\n")).lower()
 while choose_city not in city_list:
-    choose_city = str(input("That is not a valid city. Which city would you like to explore?\n")).lower()
+    choose_city = str(input("Sorry, that is not a valid city. Which city would you like to explore?\n")).lower()
 
 # get user input to see 5 lines of raw data
 raw_data = str(input("Would you like to see a few lines of raw data before we filter? (Y/N)\n")).lower()
 i = 0
 j = 5
 while raw_data not in raw_list:
-    raw_data = str(input("That is not a valid answer. Would you like to see a few lines of raw data? (Y/N)\n")).lower()
+    raw_data = str(input("Sorry, that is not a valid answer. Would you like to see a few lines of raw data? (Y/N)\n")).lower()
 while raw_data == 'y':
     #print 5 lines
     #prompt again
@@ -35,21 +35,21 @@ while raw_data == 'y':
 # get user input for FILTER (month, day, none)
 choose_filter = str(input("Would you like to filter the data by month, day, or not at all? (Type 'none' for no time filter)\n")).lower()
 while choose_filter not in filter_list:
-    choose_filter = str(input("That is not a valid filter. Month, day, or none?\n")).lower()
+    choose_filter = str(input("Sorry, that is not a valid filter. Month, day, or none?\n")).lower()
 
 # get user input for MONTH (january, february, ... , june)
 if choose_filter == "month":
     choose_month = str(input("Which month (January through June)?\n")).lower()
     choose_day = None
     while choose_month not in month_list:
-        choose_month = str(input("That is not a valid month. By which month would you like to filter (January through June)?\n")).lower()
+        choose_month = str(input("Sorry, that is not a valid month. By which month would you like to filter (January through June)?\n")).lower()
 
 # get user input for DAY of WEEK (monday, tuesday, ... sunday)
 elif choose_filter == "day":
     choose_day = str(input("Which day of the week (Sunday through Saturday)?\n")).lower()
     choose_month = None
     while choose_day not in day_list:
-        choose_day = str(input("That is not a valid day. Pick another. (Sunday through Saturday)\n")).lower()
+        choose_day = str(input("Sorry, that is not a valid day. Pick another. (Sunday through Saturday)\n")).lower()
 
 else:
     choose_month = None
